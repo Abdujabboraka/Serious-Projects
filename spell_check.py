@@ -6,5 +6,9 @@ def spell_check(text: str, character: str):
     return f"character: '{character}'\ncount: {counter}"
 
 
-print(spell_check(text="Quick brown fox jumps over the lazy dogQuick brown fox jumps over the lazy dog", character="a"))
+sample = ("""Quick brown fox jumps over the lazy dogQuick brown "
+          fox jumps over the lazy dog""")
 
+
+sym = "a"
+print(spell_check(text=sample, character=sym))
